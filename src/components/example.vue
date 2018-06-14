@@ -1,6 +1,8 @@
 <template>
   <div class="hello">
-    hello word
+    <SimpleTable :data="dataList" :config="configList" v-model="filter"></SimpleTable>
+
+    {{ filter }}
   </div>
 </template>
 
@@ -8,7 +10,17 @@
 export default {
   name: 'Example',
   data () {
-    return {}
+    return {
+      filter: '',
+      dataList: [
+        { name: '张三', age: '12', gender: '1' }
+      ],
+      configList: [
+        { type: 'prop', label: '姓名', value: 'name', width: '120' },
+        { type: 'prop', label: '年龄', value: 'age', width: '120' },
+        { type: 'prop', label: '性别', value: 'gender', width: '120', filter: 'ageFilter' },
+      ]
+    }
   }
 }
 </script>
