@@ -18,7 +18,7 @@ export default {
       configList: [
         { type: 'prop', label: '姓名', value: 'name', width: '120' },
         { type: 'prop', label: '年龄', value: 'age', width: '120' },
-        { type: 'prop', label: '性别', value: 'gender', width: '120', filter: 'ageFilter' },
+        { type: 'prop', label: '性别', value: 'gender', width: '120', filter: 'ageFilter' }
       ]
     }
   }

@@ -5,19 +5,19 @@ import App from './App'
 import router from './router'
 import ElementUI from 'element-ui'
 
-import * as filters from './filter';
+import * as filters from './filter'
 import SimpleTable from './components/simple-table'
 
 import 'element-ui/lib/theme-chalk/index.css'
 
 Vue.config.productionTip = false
 
-Vue.use(ElementUI);
-Vue.use(SimpleTable);
+Vue.use(ElementUI)
+Vue.use(SimpleTable)
 
-Object.keys(filters).forEach( key => {
-    Vue.filter(key, filters[key]);
-  });
+Object.keys(filters).forEach(key => {
+  Vue.filter(key, filters[key])
+})
 
 /* eslint-disable no-new */
 new Vue({
