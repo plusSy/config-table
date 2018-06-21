@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Example from '@/components/example'
+import Mock from '@/components/mock'
 
 // // 路由的集合
 // const RouterList = [Example]
@@ -29,6 +30,11 @@ export default new Router({
       path: '/',
       name: 'Example',
       component: Example
+    },
+    {
+      path: '/mock',
+      name: 'Mock',
+      component: Mock
     }
   ]
 })
