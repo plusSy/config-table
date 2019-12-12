@@ -1,4 +1,4 @@
-# simple-table
+# config-table
 
 > a configurable table
 
