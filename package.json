@@ -1,8 +1,8 @@
 {
-  "name": "simple-table",
+  "name": "config-table",
   "version": "1.0.0",
-  "description": "a configurable table",
-  "author": "石一龙 <wb_shiyilong@opg.cn>",
+  "description": "A configurable table",
+  "author": "sylljx@126.com",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
